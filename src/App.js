@@ -6,13 +6,14 @@ import Footer from "./footer/Footer";
 import Projects from "./projects/Projects";
 
 function App() {
+    const data = require("./data.json")
     return (
         <div className="App">
             <NavBar/>
-            <About/>
-            <Socials/>
-            <Projects/>
-            <Footer/>
+            <About data={data}/>
+            <Socials data={data}/>
+            <Projects data={data}/>
+            <Footer data={data}/>
         </div>
     );
 }

@@ -1,0 +1,43 @@
+{
+  "author": "Cyril Gavala",
+  "bio": "I‘m positively thinking Java developer who has advanced skills in developing web applications and REST services using Spring, SpringBoot, Hibernate and relation database. Also interested in other frameworks and programming languages like Python, React.js, Node.js, Express.js and MongoDB. I'm adaptable and resourceful. My advantage is mathematical education, which helps me to learn things more quickly. Next I'm creative and reliable with attention to the details. I'm an Apple fan and musician.",
+  "pathToProfilePicture": "../images/me.jpg",
+  "socials": [
+    {
+      "url": "https://www.facebook.com/cyrilgavala",
+      "icon": "../images/icons/fb_icon.png"
+    },
+    {
+      "url": "https://www.linkedin.com/in/cyril-gavala-15380083/",
+      "icon": "../images/icons/linkedin_icon.png"
+    },
+    {
+      "url": "https://twitter.com/cypooo",
+      "icon": "../images/icons/twitter_icon.png"
+    },
+    {
+      "url": "https://github.com/cyrilgavala",
+      "icon": "../images/icons/github_icon.png"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Covid 19 statistics",
+      "url": "https://covid-19-webapp.vercel.app",
+      "image": "../images/projects/covid-19-webapp.png",
+      "description": "JavaScript project containing three application. Firstly, the key application, simple web-scrap application mining data from https://korona.gov.sk and storing them into cloud MongoDB database. Next is simple node.js/express.js API for client-server communication. Lastly a simple ReactJS web application visualising web-scrapped data."
+    },
+    {
+      "name": "Bulk e-mail sender",
+      "url": "https://email-sender-webapp.vercel.app",
+      "image": "../images/projects/email-sender-webapp.png",
+      "description": "JavaScript project consisting of simple node.js/express.js API using SMTP protocol for sending emails and simple ReactJS application containing simple login (plan for the future is to integrate real Gmail login) and interface for sending a bulk emails."
+    },
+    {
+      "name": "Workout challenges",
+      "url": "https://workout-challenges.herokuapp.com",
+      "image": "../images/projects/workout-challenges-webapp.png",
+      "description": "JavaScript project having two applications. Firstly, a simple node.js/express.js API for client-server communication and ReactJS application for saving a progress of various workout challenges and visualizing it."
+    }
+  ]
+}
