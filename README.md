@@ -1,2 +1,2 @@
 # cyrilgavala-webapp
-My personal porfolio webapp made by ReactJS
+My personal portfolio webapp made by ReactJS
