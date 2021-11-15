@@ -31,7 +31,7 @@
       "name": "Bulk e-mail sender",
       "url": "https://email-sender-webapp.vercel.app",
       "image": "../images/projects/email-sender-webapp.png",
-      "description": "JavaScript project consisting of simple node.js/express.js API using SMTP protocol for sending emails and simple ReactJS application containing simple login (plan for the future is to integrate real Gmail login) and interface for sending a bulk emails."
+      "description": "JavaScript project consisting of simple ReactJS application containing integrated Gmail login and interface for sending bulk emails."
     },
     {
       "name": "Workout challenges",
