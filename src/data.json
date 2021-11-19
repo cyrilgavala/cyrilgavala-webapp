@@ -35,7 +35,7 @@
     },
     {
       "name": "Workout challenges",
-      "url": "https://workout-challenges.herokuapp.com",
+      "url": "https://workout-challenges-webapp.vercel.app",
       "image": "../images/projects/workout-challenges-webapp.png",
       "description": "JavaScript project having two applications. Firstly, a simple node.js/express.js API for client-server communication and ReactJS application for saving a progress of various workout challenges and visualizing it."
     }
