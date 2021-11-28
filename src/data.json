@@ -25,19 +25,25 @@
       "name": "Covid 19 statistics",
       "url": "https://covid-19-webapp.vercel.app",
       "image": "../images/projects/covid-19-webapp.png",
-      "description": "JavaScript project containing three application. Firstly, the key application, simple web-scrap application mining data from https://korona.gov.sk and storing them into cloud MongoDB database. Next is simple node.js/express.js API for client-server communication. Lastly a simple ReactJS web application visualising web-scrapped data."
+      "description": "Simple Javascript web-scrap application mining data from https://korona.gov.sk and storing them into cloud MongoDB database. Next, NodeJS API for client-server communication and ReactJS application visualising web-scrapped data."
     },
     {
       "name": "Bulk e-mail sender",
       "url": "https://email-sender-webapp.vercel.app",
       "image": "../images/projects/email-sender-webapp.png",
-      "description": "JavaScript project consisting of simple ReactJS application containing integrated Gmail login and interface for sending bulk emails."
+      "description": "ReactJS application containing integrated Gmail login and interface for sending bulk emails."
+    },
+    {
+      "name": "Wedding gallery",
+      "url": "https://wedding-gallery.vercel.app",
+      "image": "../images/projects/wedding-gallery-webapp.png",
+      "description": "ReactJS photo gallery from our wedding using Dropbox API."
     },
     {
       "name": "Workout challenges",
       "url": "https://workout-challenges-webapp.vercel.app",
       "image": "../images/projects/workout-challenges-webapp.png",
-      "description": "JavaScript project having two applications. Firstly, a simple node.js/express.js API for client-server communication and ReactJS application for saving a progress of various workout challenges and visualizing it."
+      "description": "NodeJS API for client-server communication and ReactJS application for saving a progress of various workout challenges and their visualisation."
     }
   ]
 }
