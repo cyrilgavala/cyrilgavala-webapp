@@ -20,8 +20,7 @@ body {
 
 #navbar {
     width: 100%;
-    height: 50px;
-    padding: .5em 0;
+    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,6 +34,7 @@ body {
     padding: .5em 1.25em;
     cursor: pointer;
     margin: 0 2em;
+    transition: color linear 500ms, background-color linear 250ms;
 }
 
 .nav-item:hover {
@@ -46,42 +46,30 @@ body {
 
 #about-container {
     width: 100%;
-    height: 600px;
-    display: inline-flex;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 60vh auto;
 }
 
 #photo-wrapper {
     height: 100%;
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
 }
 
 #photo-wrapper > img {
     height: 100%;
-    z-index: 3;
+    width: 100%;
 }
 
 #bio-wrapper {
-    height: 600px;
     display: flex;
     align-items: center;
     text-align: left;
-    position: absolute;
-    left: 150px;
-    padding-right: 10em;
+    font-size: clamp(.5rem, 1vw + .5rem, 2.5rem);
+    padding: 0 2rem;
     color: var(--secondary-color);
-    background-image: linear-gradient(to left bottom, var(--secondary-color) 30%, var(--primary-color));
-}
-
-#bio-wrapper p {
-    z-index: 6;
-    background-color: var(--primary-color-op);
-    padding: 3em;
-    border-radius: 3em;
-    min-width: 200px;
-    backdrop-filter: blur(10px);
+    background-image: linear-gradient(to right, #000 10%, var(--primary-color));
+    cursor: default;
 }
 
 /* Socials section */
@@ -91,8 +79,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80px;
-    background-color: var(--primary-color-op);
+    height: 10vh;
+    background-color: var(--secondary-color);
 }
 
 .socials-item {
@@ -101,7 +89,7 @@ body {
     margin: 2rem;
     background-color: #d9cbb8;
     border-radius: 50%;
-    transition: transform 100ms;
+    transition: transform linear 250ms;
 }
 
 .socials-item:hover {
@@ -122,27 +110,31 @@ body {
 
 #projects-container {
     width: 80%;
-    height: auto;
-    background-color: var(--primary-color-op);
+    height: 100%;
+    background-image: linear-gradient(to left, #000, var(--primary-color));
     padding: 0 10%;
     display: block;
+
 }
 
 #projects-container h2 {
-    width: 80%;
+    width: 100%;
     color: var(--secondary-color);
     text-align: center;
-    padding: 0 10%;
+    padding: 1rem 0;
+    font-weight: bold;
+    font-size: 2rem;
 }
 
 .projects-item {
-    width: 100%;
-    height: 600px;
-    transition: 500ms ease;
+    width: 40%;
+    height: 50vh;
+    transition: all 500ms ease;
     overflow: hidden;
-    margin: 3rem 0;
+    margin: 2rem 5%;
     border-radius: 1rem;
     display: grid;
+    float: left;
 }
 
 .projects-item-headline {
@@ -197,8 +189,15 @@ body {
     display: grid;
     text-align: center;
     align-items: center;
-    background-color: var(--primary-color);
+    background-color: #000000;
     color: var(--secondary-color);
+    padding-bottom: 2rem;
+    cursor: default;
+    transition: text-shadow ease-in-out 250ms;
+}
+
+#footer:hover {
+    text-shadow: var(--secondary-color) 0 0 1rem, var(--secondary-color) 0 0 2rem;
 }
 
 #scroll-to-top-icon {
@@ -210,21 +209,9 @@ body {
     left: calc(50% - 20px);
     background-color: var(--secondary-color);
     border-radius: 50%;
-    transition: transform 100ms;
+    transition: transform linear 250ms;
 }
 
 #scroll-to-top-icon:hover {
     transform: scale(1.3);
-}
-
-@media (max-width: 1000px){
-    #bio-wrapper p {
-        font-size: .8rem;
-    }
-}
-
-@media (min-width: 1001px) {
-    #bio-wrapper p {
-        font-size: 1.3rem;
-    }
 }
