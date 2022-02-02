@@ -1,13 +1,9 @@
 export default function About(props) {
 
     return <div id={"about-container"}>
-        <div id={"photo-wrapper"}>
-            <img src={props.data.pathToProfilePicture} alt={"Profile"}/>
-        </div>
+        <div id={"photo-wrapper"}/>
         <div id={"bio-wrapper"}>
-            <p>
-                {props.data.bio}
-            </p>
+            <p>{props.data.bio}</p>
         </div>
     </div>
 }

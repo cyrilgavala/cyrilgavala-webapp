@@ -1,11 +1,11 @@
 
 
 body {
-    --primary-color: #005468;
+    --primary-color: #004458;
     --primary-color-op: #00161b90;
     --secondary-color: #d9cbb8;
     --secondary-color-op: #d9cbb880;
-    background-color: var(--primary-color);
+    background-color: #000000;
 }
 
 .App {
@@ -47,26 +47,22 @@ body {
 
 #about-container {
     width: 100%;
-    height: 75vh;
+    height: 70vh;
     display: grid;
-    grid-template-columns: 56.25vh auto;
+    grid-template-columns: 52.5vh auto;
 }
 
 #photo-wrapper {
-    height: 100%;
-    width: 100%;
-}
-
-#photo-wrapper > img {
-    height: 100%;
-    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url("images/me.jpg");
+    background-size: contain;
 }
 
 #bio-wrapper {
     align-items: center;
     text-align: left;
-    font-size: clamp(.5rem, 1vw + .5rem, 2.5rem);
-    padding: 5rem;
+    font-size: clamp(.25rem, 1.25vw + .25rem, 2.5rem);
+    padding: 3rem;
     color: var(--secondary-color);
     background-image: linear-gradient(to right, #000 10%, var(--primary-color));
     cursor: default;
@@ -80,7 +76,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
+    height: 15vh;
     background-color: var(--secondary-color);
 }
 
@@ -88,7 +84,7 @@ body {
     height: 50px;
     width: 50px;
     margin: 2rem;
-    background-color: #d9cbb8;
+    background-color: var(--secondary-color);
     border-radius: 50%;
     transition: transform linear 250ms;
 }
@@ -115,7 +111,7 @@ body {
     background-image: linear-gradient(to left, #000, var(--primary-color));
     padding: 2rem 5rem 5rem 5rem;
     display: grid;
-    gap: 2rem;
+    gap: 3rem;
 
 }
 
@@ -149,6 +145,8 @@ body {
     height: 2rem;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
+    transform: scaleY(0);
+    transform-origin: bottom;
 }
 
 .projects-item-headline a {
@@ -158,7 +156,7 @@ body {
 .projects-item-description {
     color: var(--secondary-color);
     z-index: 10;
-    font-size: 1.5rem;
+    font-size: clamp(.5rem, 1.5vh + .5rem, 2.5rem);
     background-color: var(--primary-color-op);
     backdrop-filter: blur(5px);
     padding: 1.5em;
@@ -172,7 +170,10 @@ body {
     border-top-right-radius: 1rem;
 }
 
-.projects-item:hover .projects-item-description, .projects-item:focus .projects-item-description {
+.projects-item:hover .projects-item-description,
+.projects-item:focus .projects-item-description,
+.projects-item:hover .projects-item-headline,
+.projects-item:focus .projects-item-headline {
     transform: scaleY(1);
 }
 
