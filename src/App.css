@@ -16,6 +16,7 @@ body {
     box-sizing: border-box;
     background: #004458;
     scroll-behavior: smooth;
+    min-width: 800px;
 }
 
 /* Navigation */
@@ -31,7 +32,7 @@ body {
 
 .nav-item {
     color: #0e0e0e;
-    font-size: 1.25rem;
+    font-size: clamp(.2rem, 1.25vw + .2rem, 1.25rem);
     border-radius: .5rem;
     border: #0e0e0e 1px solid;
     padding: .5em 1.25em;
@@ -107,9 +108,9 @@ body {
 #skills-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 1rem;
     flex-wrap: wrap;
-    width: 60%;
+    width: 80%;
     justify-self: center;
     padding-top: 2rem;
     padding-bottom: 5rem;
@@ -127,18 +128,19 @@ body {
 
 .skills-item {
     display: grid;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: 12ch auto;
     gap: .5rem;
+    justify-content: stretch;
     align-items: center;
 }
 
 .skill-label {
     color: var(--secondary-color);
     font-size: 1.2rem;
-    padding: 1rem .5rem;
-    width: 50%;
+    padding: 1rem 0;
     text-align: right;
-    justify-self: right;
+    justify-self: left;
+    width: 100%;
 }
 
 .skill-progress {
