@@ -77,9 +77,20 @@ body {
     background-size: contain;
     background-color: var(--neutral-color);
     background-blend-mode: lighten;
-    opacity: 0;
-    animation: showContent 2s linear forwards;
+}
+
+#photo-wrapper::after {
+    animation: hideContent 2s ease-in-out forwards;
+    animation-delay: 1s;
+    content: '';
+    width: 52.5vh;
+    position: absolute;
+    height: 70vh;
+    top: 15vh;
+    left: 0;
+    background-color: var(--neutral-color);
     transform-origin: left;
+    z-index: 3;
 }
 
 #bio-wrapper {
@@ -91,9 +102,20 @@ body {
     background: var(--neutral-color);
     cursor: default;
     display: flex;
-    opacity: 0;
-    animation: showContent 2s linear forwards;
+}
+
+#bio-wrapper::after {
+    animation: hideContent 2s ease-in-out forwards;
     animation-delay: 1s;
+    content: '';
+    width: calc(100% - 52.5vh);
+    position: absolute;
+    height: 70vh;
+    top: 15vh;
+    right: 0;
+    background-color: var(--neutral-color);
+    transform-origin: right;
+    z-index: 3;
 }
 
 /* Socials section */
@@ -338,5 +360,11 @@ body {
     }
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes hideContent {
+    100% {
+        transform: scaleX(0);
     }
 }
