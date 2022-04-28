@@ -5,7 +5,7 @@ export default function Footer(props) {
     }
 
     return <div id={"footer"}>
-        <img id={"scroll-to-top-icon"} src={"../images/icons/scroll_to_top_icon.png"} alt={"Scroll to top"} onClick={scrollToTop}/>
-        &nbsp; &copy; {new Date().getFullYear()} {props.data.author}
+        <i id="scroll-to-top-icon" className="fa fa-arrow-circle-up" aria-hidden="true" onClick={scrollToTop}/>
+        <p>&copy; {new Date().getFullYear()} {props.data.author}</p>
     </div>
 }
