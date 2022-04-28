@@ -1,6 +1,6 @@
 export default function NavItem(props) {
 
-    function scrollToElement(selector) {
+    const scrollToElement = (selector) => {
         return document.querySelector('#' + selector).scrollIntoView({
             behavior: 'smooth'
         });

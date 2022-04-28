@@ -1,23 +1,23 @@
 {
   "author": "Cyril Gavala",
   "bio": "I'm Cyril Gavala and I‘m enthusiastic software engineer who is mainly dived in backend development in Java. In my free time I try to learn and improve my skills in web development using JavaScript. I'm adaptable and resourceful. My advantage is mathematical education, which helps me to learn things more quickly. Next I'm creative and reliable with attention to the details. I'm an Apple fan and musician. Also I like bodyweight and yoga workouts.",
-  "pathToProfilePicture": "../images/me.jpg",
+  "pathToProfilePicture": "../images/thumbnail/me.png",
   "socials": [
     {
       "url": "https://www.facebook.com/cyrilgavala",
-      "icon": "../images/icons/fb_icon.png"
+      "icon": "fa fa-facebook-square"
     },
     {
       "url": "https://www.linkedin.com/in/cyril-gavala-15380083/",
-      "icon": "../images/icons/linkedin_icon.png"
+      "icon": "fa fa-linkedin-square"
     },
     {
       "url": "https://twitter.com/cypooo",
-      "icon": "../images/icons/twitter_icon.png"
+      "icon": "fa fa-twitter-square"
     },
     {
       "url": "https://github.com/cyrilgavala",
-      "icon": "../images/icons/github_icon.png"
+      "icon": "fa fa-github-square"
     }
   ],
   "skills": [
