@@ -6,8 +6,9 @@ import Footer from "./footer/Footer";
 import Projects from "./projects/Projects";
 import Skills from "./skills/Skills";
 
-function App() {
+export default function App() {
     const data = require("./data.json")
+
     return (
         <div className="App">
             <NavBar/>
@@ -19,5 +20,3 @@ function App() {
         </div>
     );
 }
-
-export default App;
