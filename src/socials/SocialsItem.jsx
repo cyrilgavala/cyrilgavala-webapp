@@ -1,4 +1,5 @@
-export default function SocialsItem(props) {
-    return <i className={"socials-item " + props.icon} aria-hidden="true" title={props.url}
-              onClick={() => window.open(props.url, "_blank")}/>
+export default function SocialsItem({icon, url}) {
+    return<a href={url} target="_blank" rel="noopener noreferrer">
+        <i className={"socials-item " + icon} aria-hidden="true" title={url}/>
+    </a>
 }

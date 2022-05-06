@@ -1,11 +1,11 @@
 import {useState} from "react";
 
-export default function ProjectItem(props) {
+export const ProjectItem = ({image, name, url, description, skills}) => {
 
     const [infoVisible, setInfoVisible] = useState(false)
 
     const style = {
-        "backgroundImage": "url(" + props.project.image + ")",
+        "backgroundImage": "url(" + image + ")",
         "backgroundSize": "cover",
         "backgroundPosition": "center"
     }
@@ -14,13 +14,13 @@ export default function ProjectItem(props) {
         <i className="fa fa-info" aria-hidden="true" title="Click here for more info" onClick={() => setInfoVisible(!infoVisible)}/>
         <div className={infoVisible ? "projects-item-info infoShow" : "projects-item-info"}>
             <div className="projects-item-headline" title="Click here to visit the application">
-                <a href={props.project.url} target={"_blank"} rel="noreferrer">{props.project.name}</a>
+                <a href={url} target={"_blank"} rel="noreferrer">{name}</a>
             </div>
             <div className="projects-item-description">
-                Description: {props.project.description}
+                Description: {description}
             </div>
             <div className="projects-item-skills">
-               Skills: {props.project.skills}
+               Skills: {skills}
             </div>
         </div>
     </div>
