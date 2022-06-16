@@ -11,7 +11,7 @@ export const ProjectItem = ({image, name, url, description, skills}) => {
     }
 
     return <div className={"projects-item"} style={style}>
-        <i className="fa fa-info" aria-hidden="true" title="Click here for more info" onClick={() => setInfoVisible(!infoVisible)}/>
+        <i className="fa fa-info" aria-hidden="true" title="Hover here for more info" onClick={() => setInfoVisible(!infoVisible)}/>
         <div className={infoVisible ? "projects-item-info infoShow" : "projects-item-info"}>
             <div className="projects-item-headline" title="Click here to visit the application">
                 <a href={url} target={"_blank"} rel="noreferrer">{name}</a>

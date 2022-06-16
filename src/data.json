@@ -83,6 +83,13 @@
       "description": "Full-stack project of three applications. Web-scrap one 'steals' data from https://korona.gov.sk and stores them into cloud Mongo database. Simple Node/Express API serves to communicate between ReactJS application and the database."
     },
     {
+      "name": "Reservations app",
+      "url": "https://cg-reservations-ui.vercel.app",
+      "image": "../images/projects/reservations-app.png",
+      "skills": "JavaScript, ReactJS, Spring boot, Spring security, JWT, MongoDB",
+      "description": "Full-stack project of two applications. Simple backend Spring boot application with JWT authentication and authorization using Spring security and cloud MongoDB database. ReactJS frontend app for simple UI."
+    },
+    {
       "name": "Bulk e-mail sender",
       "url": "https://email-sender-webapp.vercel.app",
       "image": "../images/projects/email-sender-webapp.png",

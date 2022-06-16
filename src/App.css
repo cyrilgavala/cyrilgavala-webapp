@@ -273,7 +273,8 @@ body {
     gap: 1rem;
 }
 
-.infoShow {
+.fa-info:hover + .projects-item-info,
+.fa-info:focus + .projects-item-info {
     transform: scale(1);
 }
 
