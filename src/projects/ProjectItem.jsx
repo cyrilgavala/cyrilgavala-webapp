@@ -12,14 +12,14 @@ export const ProjectItem = ({image, name, url, description, skills}) => {
             <div className="projects-item-headline">
                 {name}
             </div>
-            <div className="projects-item-link">
-                <b>Link:</b> <a href={url} target={"_blank"} rel="noreferrer" title="Click here to visit the application">{url}</a>
-            </div>
             <div className="projects-item-description">
-                <b>Description:</b> {description}
+                <p>Description:</p> {description}
             </div>
             <div className="projects-item-skills">
-                <b>Skills:</b> {skills}
+                <p>Skills:</p> {skills}
+            </div>
+            <div className="projects-item-link">
+                <a href={url} target={"_blank"} rel="noreferrer" title="Click here to visit the application">Try it out</a>
             </div>
         </div>
     </div>

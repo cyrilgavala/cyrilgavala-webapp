@@ -20,60 +20,6 @@
       "icon": "fa fa-github-square"
     }
   ],
-  "skills": [
-    {
-      "name": "Java",
-      "level": 80
-    },
-    {
-      "name": "JavaScript",
-      "level": 75
-    },
-    {
-      "name": "Python",
-      "level": 50
-    },
-    {
-      "name": "Hibernate",
-      "level": 65
-    },
-    {
-      "name": "Spring",
-      "level": 65
-    },
-    {
-      "name": "React",
-      "level": 70
-    },
-    {
-      "name": "TypeScript",
-      "level": 50
-    },
-    {
-      "name": "ExpressJS",
-      "level": 60
-    },
-    {
-      "name": "NodeJS",
-      "level": 60
-    },
-    {
-      "name": "OracleDB",
-      "level": 75
-    },
-    {
-      "name": "MySQL",
-      "level": 70
-    },
-    {
-      "name": "MongoDB",
-      "level": 65
-    },
-    {
-      "name": "Docker",
-      "level": 50
-    }
-  ],
   "projects": [
     {
       "name": "Covid 19 statistics",
